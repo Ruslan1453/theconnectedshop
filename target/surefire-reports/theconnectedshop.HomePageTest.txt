@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: theconnectedshop.HomePageTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.28 s <<< FAILURE! -- in theconnectedshop.HomePageTest
+theconnectedshop.HomePageTest.verifyLogoLink -- Time elapsed: 5.910 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at theconnectedshop.By.cssSelector(By.java:12)
+	at theconnectedshop.HomePageTest.verifyLogoLink(HomePageTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
