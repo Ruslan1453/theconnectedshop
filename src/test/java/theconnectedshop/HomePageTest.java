@@ -68,7 +68,7 @@ public class HomePageTest {
     public void verifySearchInputField() {
         driver.get("https://theconnectedshop.com/");
 
-        WebElement searchInput = driver.findElement(By.cssSelector("input[name='q'"));
+        WebElement searchInput = driver.findElement(By.cssSelector("input[name='q']"));
         Assertions.assertTrue(searchInput.isDisplayed(), "Search input should be visible");
         Assertions.assertEquals(
             "Search",
@@ -93,7 +93,7 @@ public class HomePageTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         
-        WebElement searchInput = driver.findElement(By.name("Search-In-Inline"));
+        WebElement searchInput = driver.findElement(By.id("Search-In-Inline"));
         searchInput.clear();
         searchInput.sendKeys("lock");
 
@@ -122,13 +122,13 @@ public class HomePageTest {
             "URL should contain the search query 'lock', but was: " + currentUrl
         );
 
-        
+    }
 
  @AfterAll
     public static void teardown() {
         if (driver != null) {
-            driver.quit(); {
+            driver.quit(); 
         
     }
 }
-    }
+} 
