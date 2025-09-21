@@ -202,9 +202,30 @@ public void verifySmartDoorLockSuggestionNavigatesToProductPage() {
         "Page title should reflect Smart Door Lock. Title: " + pageTitle + " | Suggestion: " + suggestionText
     );
 }
-
-
-
+@Test 
+@Order(7) 
+public void verifySmartDoorLockProductPageElements() {
+     driver.get("https://theconnectedshop.com/products/smart-door-lock-slim"); 
+     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+     
+     WebElement productTitle = wait.until( ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.product__title > h1")) );
+      Assertions.assertTrue( productTitle.getText().toLowerCase().contains("smart door lock"), "Product title should contain 'Smart Door Lock', but was: " + productTitle.getText() ); 
+      // Проверяем цену 
+      WebElement productPrice = driver.findElement(By.cssSelector("span.price-item--regular")); 
+      Assertions.assertTrue(productPrice.isDisplayed(), "Product price should be visible"); 
+      Assertions.assertFalse(productPrice.getText().isEmpty(), "Product price should not be empty"); 
+      // Проверяем наличие кнопки "Add to Cart"
+       WebElement addToCartBtn = driver.findElement(By.cssSelector("#card-submit-button-template--19784308457713__main"));
+        Assertions.assertTrue(addToCartBtn.isDisplayed(), "Add to Cart button should be visible"); 
+        Assertions.assertEquals("Add to cart", addToCartBtn.getText().trim(), "Button text should be 'Add to cart'"); 
+        // Проверяем наличие изображения продукта 
+        WebElement productImage = driver.findElement(By.cssSelector("#Slide-template--19784308457713__main-35036585558257 > a > div > img")); 
+        Assertions.assertTrue(productImage.isDisplayed(), "Product image should be visible");
+         Assertions.assertFalse(productImage.getAttribute("src").isEmpty(), "Product image src should not be empty");
+          // Проверяем описание продукта 
+          WebElement productDescription = driver.findElement(By.cssSelector("#shopify-section-template--19784308457713__52bf00c5-c1a5-4bcd-9b87-204e690ab1d5 > div > div > div > div.tabs__title-list-wrapper.flex > div > ul > li:nth-child(1) > label")); 
+          Assertions.assertTrue(productDescription.isDisplayed(), "Product description should be visible"); 
+          Assertions.assertFalse(productDescription.getText().isEmpty(), "Product description should not be empty"); }
 
     @AfterAll
     public static void teardown() {
