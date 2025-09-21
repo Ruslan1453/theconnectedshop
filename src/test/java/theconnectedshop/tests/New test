@@ -60,7 +60,7 @@ public class ProductPage {
     }
 }
 
-// ===== HeaderComponent.java =====
+
 package theconnectedshop.pages.components;
 
 import theconnectedshop.utils.Locators;
@@ -334,7 +334,7 @@ public class ProductTests extends BaseTest {
         Assertions.assertTrue(product.getAddToCartButton().isDisplayed());
 
         Assertions.assertEquals("Add to cart", product.getAddToCartButton().getText().trim());
-        
+
         Assertions.assertTrue(product.getImage().isDisplayed());
         
        
