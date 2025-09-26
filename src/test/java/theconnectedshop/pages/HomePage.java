@@ -1,17 +1,14 @@
 package theconnectedshop.pages;
  
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
  
 public class HomePage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    private WebDriverWait wait;
  
-    private String url = "https://theconnectedshop.com/";
+    private final String url = "https://theconnectedshop.com/";
  
     
  
@@ -19,7 +16,7 @@ public class HomePage {
 
         this.driver = driver;
 
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        
 
     }
  
@@ -37,6 +34,9 @@ public class HomePage {
     public String getcurrentUrl() {
         return driver.getCurrentUrl();
 
+    }
+
+    public void setWait(WebDriverWait wait) {
     }
     
         
