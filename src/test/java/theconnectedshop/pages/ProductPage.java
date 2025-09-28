@@ -1,40 +1,69 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package theconnectedshop.pages;
+ 
+import java.time.Duration;
 
-import java.util.function.BooleanSupplier;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
+ 
 public class ProductPage {
-
-    public ProductPage(WebDriver driver, WebDriverWait wait) {
-        throw new UnsupportedOperationException("Not supported yet.");
+ 
+    private WebDriver driver;
+    private WebDriverWait wait;
+ 
+    // Локатори
+    private By title = By.cssSelector("h1.product__title");
+    private By price = By.cssSelector("span.product__price");
+    private By addToCartButton = By.cssSelector("button.product__add-to-cart");
+    private By mainImage = By.cssSelector("img.product__image");
+    private By descriptionSection = By.cssSelector("div.product__description");
+ 
+    public ProductPage(WebDriver driver, WebDriverWait wait1) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-
+ 
+    // ----- Геттери -----
     public String getTitleText() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(title)).getText();
     }
-
+ 
     public String getPriceText() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(price)).getText();
     }
-
-    public Object getAddToCartButton() {
-        throw new UnsupportedOperationException("Not supported yet.");
+   public WebElement getAddToCartButton() {
+        return wait.until(ExpectedConditions.elementToBeClickable(addToCartButton));
     }
-
-    public Object getMainImage() {
-        throw new UnsupportedOperationException("Not supported yet.");
+ 
+    public WebElement getMainImage() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(mainImage));
     }
-
-    public BooleanSupplier hasDescriptionSection() {
-        throw new UnsupportedOperationException("Not supported yet.");
+ 
+    public boolean hasDescriptionSection() {
+        return !driver.findElements(descriptionSection).isEmpty();
     }
-
+ // Методы
+    
+    public void clickAddToCart() {
+        getAddToCartButton().click();
+    }
+ 
+    public void openMainImage() {
+        getMainImage().click();
+    }
+ 
+    public boolean isProductVisible() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(title)).isDisplayed();
+    }
+ 
+    public boolean isPriceDisplayed() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(price)).isDisplayed();
+    }
+ 
+    public boolean isAddToCartEnabled() {
+        return getAddToCartButton().isEnabled();
+    }
 }
+

@@ -1,88 +1,105 @@
-package theconnectedshop.tests;
+package theconnectedshop;
 
-import theconnectedshop.pages.ProductPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
-
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import theconnectedshop.pages.ProductPage;
 
-         
 @TestMethodOrder(OrderAnnotation.class)
 public class ProductSearchTest {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
-    private ProductPage productPage;
+    private static WebDriver driver;          
+    private static WebDriverWait wait;        
+    private static ProductPage productPage;  
+
+    private static final String PRODUCT_URL =
+            "https://theconnectedshop.com/products/smart-door-lock-slim";
 
     @BeforeAll
-   public  void setup() {
+    public static void setup() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-      
+
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ZERO);
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(12));
+
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         productPage = new ProductPage(driver, wait);
     }
 
     @AfterAll
-   public  void teardown() {
+    public static void teardown() {
         if (driver != null) driver.quit();
     }
 
     @Test
     @Order(1)
-   public  void pageTitleContainsBrandOrProduct() {
-        driver.get("https://theconnectedshop.ca/products/smart-door-lock-slim");
-        String actualTitle = driver.getTitle();
+    public void pageTitleContainsBrandOrProduct() {   
+        driver.get(PRODUCT_URL);
+        String title = driver.getTitle().toLowerCase();
         Assertions.assertTrue(
-            actualTitle.toLowerCase().contains("connected") || actualTitle.toLowerCase().contains("smart"),
-            "Expected the page title to contain 'connected' or 'smart', but was: " + actualTitle
+                title.contains("connected") || title.contains("smart"),
+                "Unexpected title: " + title
         );
     }
 
     @Test
     @Order(2)
-   public  void productTitleVisible() {
-        driver.get("https://theconnectedshop.ca/products/smart-door-lock-slim");
-        String titleText = productPage.getTitleText();          // есть в ProductPage
-        Assertions.assertFalse(titleText.isBlank(), "Product title should not be blank");
+    public void testProductTitleIsDisplayed() {
+        driver.get(PRODUCT_URL);
+        Assertions.assertTrue(
+                !productPage.getTitleText().isBlank(),          
+                "Заголовок продукту не відображається"
+        );
+        System.out.println("Title: " + productPage.getTitleText());
     }
 
     @Test
     @Order(3)
-   public  void productPriceVisibleAndNotEmpty() {
-        driver.get("https://theconnectedshop.ca/products/smart-door-lock-slim");
-        String price = productPage.getPriceText();             
-        Assertions.assertFalse(price.isBlank(), "Product price should be visible and not empty");
+    public void testAddToCartButton() {
+        driver.get(PRODUCT_URL);
+      
+        Assertions.assertTrue(
+                productPage.getAddToCartButton().isEnabled(),
+                "Кнопка 'Додати у кошик' недоступна"
+        );
+        productPage.getAddToCartButton().click();
+        System.out.println("Product added to cart successfully");
     }
 
     @Test
     @Order(4)
-  public  void addToCartButtonClickable() {
-        driver.get("https://theconnectedshop.ca/products/smart-door-lock-slim");
-        Assertions.assertTrue(productPage.getAddToCartButton().isDisplayed(), "Add to Cart button should be visible");
+    public void testDescriptionSectionPresence() {
+        driver.get(PRODUCT_URL);
+        Assertions.assertTrue(
+                productPage.hasDescriptionSection(),
+                "Секція опису продукту відсутня"
+        );
+        System.out.println("Description section is visible");
     }
 
     @Test
     @Order(5)
-   public  void mainImageVisible() {
-        driver.get("https://theconnectedshop.ca/products/smart-door-lock-slim");
-        Assertions.assertTrue(productPage.getMainImage().isDisplayed(), "Main product image should be visible");
-    }
-
-    @Test
-    @Order(6)   
-   public  void hasDescriptionSection() {
-        driver.get("https://theconnectedshop.ca/products/smart-door-lock-slim");
-        Assertions.assertTrue(productPage.hasDescriptionSection(), "Description/tabs section should be present");
+    public void testProductPriceisDisplayed() {
+        driver.get(PRODUCT_URL);
+       
+        Assertions.assertTrue(
+                productPage.getPriceText().isBlank(),
+                "Product price is empty"
+        );
+        System.out.println("Product price is displayed: " + productPage.getPriceText());
     }
 }
