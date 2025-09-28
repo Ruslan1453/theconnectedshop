@@ -97,8 +97,12 @@ public class ProductSearchTest {
         driver.get(PRODUCT_URL);
        
         Assertions.assertTrue(
-                productPage.getPriceText().isBlank(),
+               !productPage.getPriceText().isBlank(),
                 "Product price is empty"
+                Assertions.assertFalse(
+        productPage.getPriceText().isBlank(),
+        "Product price is empty"
+);
         );
         System.out.println("Product price is displayed: " + productPage.getPriceText());
     }
