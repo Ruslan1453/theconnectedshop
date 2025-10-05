@@ -107,7 +107,7 @@ public static void setup() {
     public void verifySearchInputField() {
         driver.get("https://theconnectedshop.com/");
  
-        WebElement searchInput = driver.findElement(By.cssSelector("input[name='q']"));
+        WebElement searchInput = driver.findElement(By.cssSelector("#Search-In-Inline"));
         Assertions.assertTrue(searchInput.isDisplayed(), "Search input should be visible");
  
         Allure.step("Проверяем placeholder", () ->
