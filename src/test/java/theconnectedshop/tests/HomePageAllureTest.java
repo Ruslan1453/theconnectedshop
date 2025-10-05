@@ -1,10 +1,7 @@
 package theconnectedshop.tests;
  
-import java.time.Duration;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -12,9 +9,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -22,21 +17,22 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import theconnectedshop.BasePage;
  
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Epic("The Connected Shop UI Tests")
 @Feature("Home Page and Search")
-public class HomePageAllureTest {
+public class HomePageAllureTest extends BasePage {
  
     static WebDriver driver;
  
-    @BeforeAll
-    public static void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-    }
+    //@BeforeAll
+   // public static void setup() {
+  //      WebDriverManager.chromedriver().setup();
+   //     driver = new ChromeDriver();
+  //      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+   //     driver.manage().window().maximize();
+   // }
  
     @Test
     @Order(1)
