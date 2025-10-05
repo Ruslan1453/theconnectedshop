@@ -1,5 +1,4 @@
 package theconnectedshop;
-
 import java.time.Duration;
 
 import org.junit.jupiter.api.AfterAll;
@@ -17,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class HomePageTest {

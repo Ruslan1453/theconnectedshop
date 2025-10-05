@@ -14,9 +14,9 @@ public class ProductPage {
     private WebDriverWait wait;
  
     // Локатори
-    private By title = By.cssSelector("h1.product__title");
-    private By price = By.cssSelector("span.product__price");
-    private By addToCartButton = By.cssSelector("button.product__add-to-cart");
+    private By title = By.cssSelector("h1[class='font-heading-extra-bold margin0 h2']");
+    private By price = By.cssSelector("div[id='price-template--19784308457713__main'] div:nth-child(1) div:nth-child(1) div:nth-child(1) span:nth-child(2)");
+    private By addToCartButton = By.cssSelector("button[id='card-submit-button-template--19784308457713__main'] span");
     private By mainImage = By.cssSelector("img.product__image");
     private By descriptionSection = By.cssSelector("div.product__description");
  
