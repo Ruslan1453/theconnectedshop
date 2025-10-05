@@ -10,16 +10,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  
 public class ProductPage {
  
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
  
     // Локатори
-    private By title = By.cssSelector("h1[class='font-heading-extra-bold margin0 h2']");
-    private By price = By.cssSelector("div[id='price-template--19784308457713__main'] div:nth-child(1) div:nth-child(1) div:nth-child(1) span:nth-child(2)");
-    private By addToCartButton = By.cssSelector("button[id='card-submit-button-template--19784308457713__main'] span");
-    private By mainImage = By.cssSelector("img.product__image");
-    private By descriptionSection = By.cssSelector("div.product__description");
- 
+    private final By title = By.cssSelector("h1[class='font-heading-extra-bold margin0 h2']");
+    private final By price = By.cssSelector("div[id='price-template--19784308457713__main'] div:nth-child(1) div:nth-child(1) div:nth-child(1) span:nth-child(2)");
+    private final By addToCartButton = By.cssSelector("button[id='card-submit-button-template--19784308457713__main'] span");
+    private final By mainImage = By.cssSelector("img.product__image");
+    private final By descriptionSection = By.cssSelector("div.product__description");
+    
     public ProductPage(WebDriver driver, WebDriverWait wait1) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -64,6 +64,10 @@ public class ProductPage {
  
     public boolean isAddToCartEnabled() {
         return getAddToCartButton().isEnabled();
+    }
+
+    public By getPrice() {
+        return price;
     }
 }
 
