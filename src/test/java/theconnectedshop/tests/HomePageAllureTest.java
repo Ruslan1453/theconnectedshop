@@ -1,7 +1,10 @@
 package theconnectedshop.tests;
  
+import java.time.Duration;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -9,7 +12,10 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -17,12 +23,11 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import theconnectedshop.BasePage;
  
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Epic("The Connected Shop UI Tests")
 @Feature("Home Page and Search")
-public class HomePageAllureTest extends BasePage {
+public class HomePageAllureTest  {
  
     static WebDriver driver;
  
@@ -33,6 +38,23 @@ public class HomePageAllureTest extends BasePage {
   //      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
    //     driver.manage().window().maximize();
    // }
+   @BeforeAll
+public static void setup() {
+    WebDriverManager.chromedriver().setup();
+ 
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless=new"); // важно для CI
+    options.addArguments("--no-sandbox");
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--disable-gpu");
+    options.addArguments("--remote-allow-origins=*");
+    options.addArguments("--window-size=1920,1080");
+    options.addArguments("--user-data-dir=/tmp/chrome-user-data-" + System.currentTimeMillis());
+ 
+    driver = new ChromeDriver(options);
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    driver.manage().window().maximize();
+}
  
     @Test
     @Order(1)
