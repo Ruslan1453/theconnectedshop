@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: theconnectedshop.HomePageTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.39 s -- in theconnectedshop.HomePageTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.83 s -- in theconnectedshop.HomePageTest

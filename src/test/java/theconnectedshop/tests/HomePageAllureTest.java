@@ -9,6 +9,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,10 +26,12 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import io.qameta.allure.junit5.AllureJunit5;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Epic("The Connected Shop UI Tests")
 @Feature("Home Page and Search")
+@ExtendWith(AllureJunit5.class)
 public class HomePageAllureTest {
 
     private static WebDriver driver;
