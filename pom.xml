@@ -2,117 +2,103 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.theconnectedshop</groupId>
-  <artifactId>shop</artifactId>
-  <version>1.0-SNAPSHOT</version>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
-
-    <selenium.version>4.35.0</selenium.version>
-    <webdrivermanager.version>6.2.0</webdrivermanager.version>
-    <junit.jupiter.version>5.11.0</junit.jupiter.version>
-
-    <maven.surefire.plugin.version>3.2.5</maven.surefire.plugin.version>
-    <allure.maven.plugin.version>2.12.0</allure.maven.plugin.version>
-    <allure.junit5.version>2.30.0</allure.junit5.version>
-  </properties>
-
-  <dependencies>
-    <!-- Selenium -->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>${selenium.version}</version>
-    </dependency>
-
-    <!-- WebDriverManager -->
-    <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>${webdrivermanager.version}</version>
-    </dependency>
-
-    <!-- Allure JUnit5 adapter (produces target/allure-results) -->
-    <dependency>
-      <groupId>io.qameta.allure</groupId>
-      <artifactId>allure-junit5</artifactId>
-      <version>${allure.junit5.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-    <!-- JUnit 5 -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>${junit.jupiter.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>${junit.jupiter.version}</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-  <build>
-    <plugins>
-      <!-- Java compiler -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.11.0</version>
-        <configuration>
-          <release>${maven.compiler.release}</release>
-        </configuration>
-      </plugin>
-
-      <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-surefire-plugin</artifactId>
-  <version>${maven.surefire.plugin.version}</version>
-  <configuration>
-    <useModulePath>false</useModulePath>
-    <systemPropertyVariables>
-      <junit.jupiter.extensions.autodetection.enabled>true</junit.jupiter.extensions.autodetection.enabled>
-      <!-- optional: set a custom results dir -->
-      <!-- <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory> -->
-    </systemPropertyVariables>
-  </configuration>
-</plugin>
-
-
-      <!-- Run JUnit 5 tests -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>${maven.surefire.plugin.version}</version>
-        <configuration>
-          <useModulePath>false</useModulePath>
-          <includes>
-            <include>**/*Test.java</include>
-            <include>**/*Tests.java</include>
-          </includes>
-        </configuration>
-      </plugin>
-
-      <!-- Allure Maven plugin (enables `mvn allure:report`) -->
-      <plugin>
-        <groupId>io.qameta.allure</groupId>
-        <artifactId>allure-maven</artifactId>
-        <version>${allure.maven.plugin.version}</version>
-      </plugin>
-    </plugins>
-  </build>
-
-</project>
-
-
  
-
-
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.theconnectedshop</groupId>
+<artifactId>shop</artifactId>
+<version>1.0-SNAPSHOT</version>
+ 
+  <properties>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<maven.compiler.release>17</maven.compiler.release>
+ 
+    <selenium.version>4.35.0</selenium.version>
+<webdrivermanager.version>6.2.0</webdrivermanager.version>
+<junit.jupiter.version>5.11.0</junit.jupiter.version>
+ 
+    <maven.surefire.plugin.version>3.2.5</maven.surefire.plugin.version>
+<allure.maven.plugin.version>2.12.0</allure.maven.plugin.version>
+<allure.junit5.version>2.30.0</allure.junit5.version>
+</properties>
+ 
+  <dependencies>
+<!-- Selenium -->
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-java</artifactId>
+<version>${selenium.version}</version>
+</dependency>
+ 
+    <!-- WebDriverManager -->
+<dependency>
+<groupId>io.github.bonigarcia</groupId>
+<artifactId>webdrivermanager</artifactId>
+<version>${webdrivermanager.version}</version>
+</dependency>
+ 
+    <!-- Allure JUnit5 adapter -->
+<dependency>
+<groupId>io.qameta.allure</groupId>
+<artifactId>allure-junit5</artifactId>
+<version>${allure.junit5.version}</version>
+<scope>test</scope>
+</dependency>
+ 
+    <!-- JUnit 5 -->
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-api</artifactId>
+<version>${junit.jupiter.version}</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-engine</artifactId>
+<version>${junit.jupiter.version}</version>
+<scope>test</scope>
+</dependency>
+</dependencies>
+ 
+  <build>
+<plugins>
+<!-- Java compiler -->
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.11.0</version>
+<configuration>
+<release>${maven.compiler.release}</release>
+</configuration>
+</plugin>
+ 
+      <!-- Maven Surefire Plugin для JUnit5 + Allure listener -->
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>${maven.surefire.plugin.version}</version>
+<configuration>
+<useModulePath>false</useModulePath>
+<includes>
+<include>**/*Test.java</include>
+<include>**/*Tests.java</include>
+</includes>
+<systemPropertyVariables>
+<junit.jupiter.extensions.autodetection.enabled>true</junit.jupiter.extensions.autodetection.enabled>
+</systemPropertyVariables>
+<properties>
+<listener>io.qameta.allure.junit5.AllureJunit5</listener>
+</properties>
+</configuration>
+</plugin>
+ 
+      <!-- Allure Maven plugin (для mvn allure:report) -->
+<plugin>
+<groupId>io.qameta.allure</groupId>
+<artifactId>allure-maven</artifactId>
+<version>${allure.maven.plugin.version}</version>
+</plugin>
+</plugins>
+</build>
+ 
+</project>
