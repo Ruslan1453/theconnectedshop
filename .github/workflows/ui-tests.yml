@@ -1,61 +1,127 @@
 name: UI Tests with Allure Report
-
+ 
 on:
+
   push:
+
   pull_request:
+
   workflow_dispatch:
-
+ 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    env:
-      TZ: Europe/Kyiv
 
+  test:
+
+    runs-on: ubuntu-latest
+
+    env:
+
+      TZ: Europe/Kyiv
+ 
     steps:
+
       - name: Checkout repository
+
         uses: actions/checkout@v4
+ 
+     
 
       - name: Set up JDK 17
+
         uses: actions/setup-java@v4
+
         with:
+
           distribution: temurin
+
           java-version: '17'
+
           cache: maven
+ 
+      
 
-      # Installs stable Google Chrome (WebDriverManager will download matching chromedriver)
       - name: Setup Chrome
+
         uses: browser-actions/setup-chrome@v1
-
+ 
       - name: Verify Chrome installation
+
         run: |
+
           which chrome || true
+
           chrome --version
+ 
+     
 
-      # Run tests (headless is enabled in your test code via ChromeOptions)
       - name: Build and run tests
+
         run: mvn -B clean test -Dtest=theconnectedshop.tests.HomePageAllureTest
+ 
+      
 
-      # Generate Allure report even if plugin isn't configured in pom.xml
+      - name: Check Allure results
+
+        if: always()
+
+        run: |
+
+          echo "📂 Contents of target:"
+
+          ls -l target || true
+
+          echo "📂 Contents of target/allure-results:"
+
+          ls -l target/allure-results || echo "❌ No allure-results found"
+ 
+     
+
       - name: Generate Allure Report
-        run: mvn -B io.qameta.allure:allure-maven:2.12.0:report
 
-      - name: Upload Allure results (JSON)
         if: always()
+
+        run: mvn -B allure:report
+ 
+      
+
+      - name: Upload Allure results
+
+        if: always()
+
         uses: actions/upload-artifact@v4
+
         with:
+
           name: allure-results
-          path: target/allure-results
 
-      - name: Upload Allure report (HTML)
+          path: target/allure-results
+ 
+      
+
+      - name: Upload Allure report
+
         if: always()
+
         uses: actions/upload-artifact@v4
+
         with:
+
           name: allure-report
-          path: target/site/allure-maven-plugin/
+
+          path: target/site/allure-maven-plugin
+ 
+      
 
       - name: Upload Surefire reports on failure
+
         if: failure()
+
         uses: actions/upload-artifact@v4
+
         with:
+
           name: surefire-reports
-          path: target/surefire-reports/
+
+          path: target/surefire-reports
+
+ 
