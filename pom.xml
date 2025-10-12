@@ -15,7 +15,7 @@
 <selenium.version>4.35.0</selenium.version>
 <webdrivermanager.version>6.2.0</webdrivermanager.version>
 <junit.jupiter.version>5.11.0</junit.jupiter.version>
-<allure.maven.plugin.version>2.23.0</allure.maven.plugin.version>
+<allure.maven.plugin.version>2.16.1</allure.maven.plugin.version>
 <allure.junit5.version>2.30.0</allure.junit5.version>
 </properties>
  
