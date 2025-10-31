@@ -1,5 +1,6 @@
 theconnectedshop\BasePage.class
 theconnectedshop\pages\ProductPage.class
+theconnectedshop\tests\Apitest.class
 theconnectedshop\tests\HomePageAllureTest.class
 theconnectedshop\HomePageTest.class
 theconnectedshop\pages\HomePage.class
