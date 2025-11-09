@@ -25,7 +25,7 @@ jobs:
  
       # Устанавливаем Maven зависимости и запускаем тесты
       - name: Run API tests with Maven
-        run: mvn clean test -Dtest=ApiCrudTest
+        run: mvn clean test -Dtest=ApiTest
  
       #  Генерируем Allure отчёт
       - name: Generate Allure report
