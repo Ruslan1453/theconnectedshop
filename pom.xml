@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
+
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
  
   <modelVersion>4.0.0</modelVersion>
@@ -9,42 +11,49 @@
 <artifactId>shop</artifactId>
 <version>1.0-SNAPSHOT</version>
  
- 
-<properties>
+  <properties>
 <maven.compiler.release>17</maven.compiler.release>
-<selenium.version>4.35.0</selenium.version>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+ 
+    <selenium.version>4.35.0</selenium.version>
 <webdrivermanager.version>6.2.0</webdrivermanager.version>
 <junit.jupiter.version>5.11.0</junit.jupiter.version>
 <allure.maven.plugin.version>2.16.1</allure.maven.plugin.version>
 <allure.junit5.version>2.30.0</allure.junit5.version>
 </properties>
  
-    <dependencies>
+  <dependencies>
 <!-- Selenium -->
 <dependency>
 <groupId>org.seleniumhq.selenium</groupId>
 <artifactId>selenium-java</artifactId>
 <version>${selenium.version}</version>
 </dependency>
- <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+ 
+    <!-- Rest-Assured -->
 <dependency>
-    <groupId>io.rest-assured</groupId>
-    <artifactId>rest-assured</artifactId>
-    <version>5.5.6</version>
-    <scope>test</scope>
+<groupId>io.rest-assured</groupId>
+<artifactId>rest-assured</artifactId>
+<version>5.5.6</version>
+<scope>test</scope>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.json/json -->
+ 
+    <!-- JSON -->
 <dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20250517</version>
+<groupId>org.json</groupId>
+<artifactId>json</artifactId>
+<version>20250517</version>
 </dependency>
-        <!-- WebDriverManager -->
+ 
+    <!-- WebDriverManager -->
 <dependency>
 <groupId>io.github.bonigarcia</groupId>
 <artifactId>webdrivermanager</artifactId>
 <version>${webdrivermanager.version}</version>
 </dependency>
+ 
+    <!-- Logging -->
 <dependency>
 <groupId>org.slf4j</groupId>
 <artifactId>slf4j-simple</artifactId>
@@ -52,7 +61,7 @@
 <scope>test</scope>
 </dependency>
  
-        <!-- Allure JUnit5 -->
+    <!-- Allure JUnit5 -->
 <dependency>
 <groupId>io.qameta.allure</groupId>
 <artifactId>allure-junit5</artifactId>
@@ -60,14 +69,15 @@
 <scope>test</scope>
 </dependency>
  
-        <!-- JUnit5 -->
+    <!-- JUnit 5 -->
 <dependency>
 <groupId>org.junit.jupiter</groupId>
 <artifactId>junit-jupiter-api</artifactId>
 <version>${junit.jupiter.version}</version>
 <scope>test</scope>
 </dependency>
-<dependency>
+ 
+    <dependency>
 <groupId>org.junit.jupiter</groupId>
 <artifactId>junit-jupiter-engine</artifactId>
 <version>${junit.jupiter.version}</version>
@@ -75,7 +85,7 @@
 </dependency>
 </dependencies>
  
-    <build>
+  <build>
 <plugins>
 <!-- Compiler -->
 <plugin>
@@ -87,35 +97,38 @@
 </configuration>
 </plugin>
  
-            <!-- Surefire -->
+      <!-- Surefire (JUnit 5 + Allure) -->
 <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-surefire-plugin</artifactId>
-  <version>3.2.5</version>
-  <configuration>
-    <useModulePath>false</useModulePath>
-    <includes>
-      <include>**/*Test.java</include>
-      <include>**/*Tests.java</include>
-    </includes>
-    <systemPropertyVariables>
-      <junit.jupiter.extensions.autodetection.enabled>true</junit.jupiter.extensions.autodetection.enabled>
-    </systemPropertyVariables>
-  </configuration>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>3.2.5</version>
+<configuration>
+<useModulePath>false</useModulePath>
+<includes>
+<include>**/*Test.java</include>
+<include>**/*Tests.java</include>
+</includes>
+<systemPropertyVariables>
+<junit.jupiter.extensions.autodetection.enabled>true</junit.jupiter.extensions.autodetection.enabled>
+<allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+</systemPropertyVariables>
+</configuration>
 </plugin>
-
  
-            <!-- Allure Maven plugin -->
+      <!-- Allure Maven Plugin -->
 <plugin>
 <groupId>io.qameta.allure</groupId>
 <artifactId>allure-maven</artifactId>
 <version>${allure.maven.plugin.version}</version>
 <configuration>
 <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+<reportDirectory>${project.build.directory}/site/allure-maven-plugin</reportDirectory>
 </configuration>
 </plugin>
 </plugins>
 </build>
 </project>
+
+ 
 
  
