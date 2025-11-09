@@ -1,0 +1,1 @@
+{"uuid":"21519218-9bf0-43e3-ad94-0933cb98fc0c","name":"fullCrudTest()","children":["d33f16e0-e823-4f1c-b3eb-88ccd4ab88ca"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762704604085,"stop":1762704604585}],"afters":[],"start":1762704603953,"stop":1762704612953}

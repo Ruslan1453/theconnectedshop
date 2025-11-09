@@ -7,3 +7,4 @@ theconnectedshop\pages\HomePage.class
 theconnectedshop\tests\ProductSearchTest.class
 theconnectedshop\SimpleTest.class
 theconnectedshop\pages\Header.class
+theconnectedshop\tests\RestAssured.class

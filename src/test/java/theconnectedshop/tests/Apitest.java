@@ -1,133 +1,177 @@
 package theconnectedshop.tests;
-import org.junit.jupiter.api.Test;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.junit5.AllureJunit5;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
+@Epic("WordPress Posts API")
+@Feature("Полный CRUD с Allure")
+@ExtendWith(AllureJunit5.class) 
 public class Apitest {
 
-    @Test
-    void createPostTest() {
+    private final String username = "admin";
+    private final String password = "Engineer_123";
+
+    private int postId;
+
+    @BeforeEach
+    @SuppressWarnings("unused")
+    void setup() {
+       
         RestAssured.baseURI = "https://dev.emeli.in.ua/wp-json/wp/v2";
+    }
+
+   
+
+    @Step("Создаём пост")
+    private Response createPost() {
 
         String jsonBody = """
                 {
-                    "title": "new title",
-                    "content": "new content",
+                    "title": "Allure CRUD Test Post",
+                    "content": "This post is created by Allure CRUD test",
                     "status": "publish"
                 }
                 """;
-        String username = "admin";
-        String password = "Engineer_123";
 
         Response response = RestAssured
                 .given()
-                .auth().preemptive().basic(username, password)
-                .header("Content-Type", "application/json")
-                .body(jsonBody)
+                    .auth().preemptive().basic(username, password)
+                    .header("Content-Type", "application/json")
+                    .body(jsonBody)
+                    .log().all()
                 .when()
-                .post("/posts")
+                    .post("/posts")
                 .then()
-                .statusCode(201)
-                .extract()
-                .response();
+                    .log().all()
+                    .statusCode(201)
+                    .extract().response();
 
-        System.out.println("Response:");
-        System.out.println(response.asString());
+        postId = response.jsonPath().getInt("id");
+        Allure.addAttachment("Create Response", response.asString());
+
+        return response;
     }
 
-    @Test
-    void createDraftPostTest() {
-        RestAssured.baseURI = "https://dev.emeli.in.ua/wp-json/wp/v2";
+    @Step("Получаем пост по ID {postId}")
+    private Response getPost() {
+
+        Response response = RestAssured
+                .given()
+                    .auth().preemptive().basic(username, password)
+                    .log().all()
+                .when()
+                    .get("/posts/" + postId)
+                .then()
+                    .log().all()
+                    .statusCode(200)
+                    .extract().response();
+
+        Allure.addAttachment("Get Response", response.asString());
+        return response;
+    }
+
+    @Step("Обновляем пост {postId}")
+    private Response updatePost() {
 
         String jsonBody = """
                 {
-                    "title": "draft post",
-                    "content": "this is draft content",
-                    "status": "draft"
+                    "title": "Updated Allure CRUD Post",
+                    "content": "Updated content for Allure CRUD test"
                 }
                 """;
-        String username = "admin";
-        String password = "Engineer_123";
 
         Response response = RestAssured
                 .given()
-                .auth().preemptive().basic(username, password)
-                .header("Content-Type", "application/json")
-                .body(jsonBody)
+                    .auth().preemptive().basic(username, password)
+                    .header("Content-Type", "application/json")
+                    .body(jsonBody)
+                    .log().all()
                 .when()
-                .post("/posts")
+                    .put("/posts/" + postId)
                 .then()
-                .statusCode(201)
-                .extract()
-                .response();
+                    .log().all()
+                    .statusCode(200)
+                    .extract().response();
 
-        System.out.println("Response (draft):");
-        System.out.println(response.asString());
+        Allure.addAttachment("Update Response", response.asString());
+        return response;
     }
 
-    @Test
-    void createPendingPostTest() {
-        RestAssured.baseURI = "https://dev.emeli.in.ua/wp-json/wp/v2";
-
-        String jsonBody = """
-                {
-                    "title": "pending post",
-                    "content": "this post is waiting for review",
-                    "status": "pending"
-                }
-                """;
-        String username = "admin";
-        String password = "Engineer_123";
+    @Step("Удаляем пост {postId}")
+    private Response deletePost() {
 
         Response response = RestAssured
                 .given()
-                .auth().preemptive().basic(username, password)
-                .header("Content-Type", "application/json")
-                .body(jsonBody)
+                    .auth().preemptive().basic(username, password)
+                    .queryParam("force", true)
+                    .log().all()
                 .when()
-                .post("/posts")
+                    .delete("/posts/" + postId)
                 .then()
-                .statusCode(201)
-                .extract()
-                .response();
+                    .log().all()
+                    .statusCode(200)
+                    .extract().response();
 
-        System.out.println("Response (pending):");
-        System.out.println(response.asString());
+        Allure.addAttachment("Delete Response", response.asString());
+        return response;
     }
 
     @Test
-    void createFuturePostTest() {
-        RestAssured.baseURI = "https://dev.emeli.in.ua/wp-json/wp/v2";
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Полный CRUD: создание, чтение, обновление и удаление поста")
+    void fullCrudTest() {
+        // CREATE
+        Response createResp = createPost();
+        Assertions.assertEquals(
+                "publish",
+                createResp.jsonPath().getString("status"),
+                "Post status should be 'publish' after creation"
+        );
+
+        // GET
+        Response getResp = getPost();
+        Assertions.assertEquals(
+                postId,
+                getResp.jsonPath().getInt("id"),
+                "Loaded post id should match created post id"
+        );
+
+        // UPDATE
+        Response updateResp = updatePost();
+        Assertions.assertTrue(
+                updateResp.jsonPath().getString("title.rendered")
+                        .contains("Updated Allure CRUD Post"),
+                "Updated title should contain 'Updated Allure CRUD Post'"
+        );
+
+        // DELETE
+Response deleteResp = deletePost();
+
+
+Boolean deleted = deleteResp.jsonPath().getBoolean("deleted");
+Assertions.assertNotNull(deleted, "Delete response should contain 'deleted' flag");
+Assertions.assertTrue(deleted, "Post should be marked as deleted");
+
+
+int deletedId = deleteResp.jsonPath().getInt("previous.id");
+Assertions.assertEquals(postId, deletedId, "Deleted post id should match created post id");
+
+Assertions.assertEquals(postId, deletedId,
+        "Deleted post id (previous.id) should match created post id");
 
         
-        String futureDate = java.time.LocalDateTime.now().plusDays(1).toString();
-
-        String jsonBody = """
-                {
-                    "title": "future post",
-                    "content": "this post will be published in future",
-                    "status": "future",
-                    "date": "2025-10-31T16:35:03"
-                }
-                """.formatted(futureDate);
-
-        String username = "admin";
-        String password = "Engineer_123";
-
-        Response response = RestAssured
-                .given()
-                .auth().preemptive().basic(username, password)
-                .header("Content-Type", "application/json")
-                .body(jsonBody)
-                .when()
-                .post("/posts")
-                .then()
-                .statusCode(201)
-                .extract()
-                .response();
-
-        System.out.println("Response (future):");
-        System.out.println(response.asString());
     }
 }
