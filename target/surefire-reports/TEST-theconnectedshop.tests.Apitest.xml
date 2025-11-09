@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="theconnectedshop.tests.Apitest" time="8.654" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="theconnectedshop.tests.Apitest" time="9.881" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -13,13 +13,14 @@
     <property name="user.country.format" value="CA"/>
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="24"/>
-    <property name="user.country" value="UA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="UA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\alisi\AppData\Local\Temp\surefire5172152942373759592\surefirebooter-20251109111332847_3.jar C:\Users\alisi\AppData\Local\Temp\surefire5172152942373759592 2025-11-09T11-13-32_674-jvmRun1 surefire-20251109111332847_1tmp surefire_0-20251109111332847_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\alisi\AppData\Local\Temp\surefire13907175968394595686\surefirebooter-20251109144630692_3.jar C:\Users\alisi\AppData\Local\Temp\surefire13907175968394595686 2025-11-09T14-46-30_387-jvmRun1 surefire-20251109144630692_1tmp surefire_0-20251109144630692_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="theconnectedshop.tests.Apitest"/>
+    <property name="test" value="Apitest"/>
     <property name="surefire.test.class.path" value="C:\shop\target\test-classes;C:\shop\target\classes;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\alisi\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\alisi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\alisi\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\alisi\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\alisi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\alisi\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\alisi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\alisi\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\alisi\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\alisi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\alisi\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\alisi\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\alisi\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\alisi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\alisi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\alisi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\alisi\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\alisi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\alisi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\alisi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\alisi\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\alisi\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\alisi\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\alisi\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\alisi\.m2\repository\org\json\json\20250517\json-20250517.jar;C:\Users\alisi\.m2\repository\io\github\bonigarcia\webdrivermanager\6.2.0\webdrivermanager-6.2.0.jar;C:\Users\alisi\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\alisi\.m2\repository\com\google\code\gson\gson\2.13.1\gson-2.13.1.jar;C:\Users\alisi\.m2\repository\com\google\errorprone\error_prone_annotations\2.38.0\error_prone_annotations-2.38.0.jar;C:\Users\alisi\.m2\repository\com\github\docker-java\docker-java\3.5.3\docker-java-3.5.3.jar;C:\Users\alisi\.m2\repository\com\github\docker-java\docker-java-core\3.5.3\docker-java-core-3.5.3.jar;C:\Users\alisi\.m2\repository\com\github\docker-java\docker-java-api\3.5.3\docker-java-api-3.5.3.jar;C:\Users\alisi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.4\jackson-annotations-2.18.4.jar;C:\Users\alisi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.4\jackson-databind-2.18.4.jar;C:\Users\alisi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.4\jackson-core-2.18.4.jar;C:\Users\alisi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\alisi\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.3\docker-java-transport-httpclient5-3.5.3.jar;C:\Users\alisi\.m2\repository\com\github\docker-java\docker-java-transport\3.5.3\docker-java-transport-3.5.3.jar;C:\Users\alisi\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\alisi\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\alisi\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\alisi\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\alisi\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\alisi\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\alisi\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\alisi\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\alisi\.m2\repository\net\java\dev\jna\jna-platform\5.17.0\jna-platform-5.17.0.jar;C:\Users\alisi\.m2\repository\org\slf4j\slf4j-simple\2.0.13\slf4j-simple-2.0.13.jar;C:\Users\alisi\.m2\repository\io\qameta\allure\allure-junit5\2.30.0\allure-junit5-2.30.0.jar;C:\Users\alisi\.m2\repository\io\qameta\allure\allure-junit-platform\2.30.0\allure-junit-platform-2.30.0.jar;C:\Users\alisi\.m2\repository\io\qameta\allure\allure-java-commons\2.30.0\allure-java-commons-2.30.0.jar;C:\Users\alisi\.m2\repository\io\qameta\allure\allure-model\2.30.0\allure-model-2.30.0.jar;C:\Users\alisi\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;C:\Users\alisi\.m2\repository\io\qameta\allure\allure-test-filter\2.30.0\allure-test-filter-2.30.0.jar;C:\Users\alisi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\alisi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\alisi\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\alisi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\alisi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\alisi\.m2\repository\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;"/>
+    <property name="allure.results.directory" value="C:\shop\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\alisi"/>
     <property name="user.language" value="uk"/>
@@ -32,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\alisi\AppData\Local\Temp\surefire5172152942373759592\surefirebooter-20251109111332847_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\alisi\AppData\Local\Temp\surefire13907175968394595686\surefirebooter-20251109144630692_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -43,7 +44,6 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="C:\Users\alisi\.vscode\extensions\oracle.oracle-java-24.1.2\nbcode\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="localRepository" value="C:\Users\alisi\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\alisi\AppData\Local\Temp\"/>
@@ -63,7 +63,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="fullCrudTest" classname="theconnectedshop.tests.Apitest" time="8.382">
+  <testcase name="fullCrudTest" classname="theconnectedshop.tests.Apitest" time="9.648">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.emeli.in.ua/wp-json/wp/v2/posts
 Proxy:			<none>
@@ -84,7 +84,7 @@ Body:
 }
 HTTP/1.1 201 Created
 Server: nginx
-Date: Sun, 09 Nov 2025 16:13:37 GMT
+Date: Sun, 09 Nov 2025 19:46:36 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -96,24 +96,24 @@ Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Co
 Allow: GET, POST
 Expires: Wed, 11 Jan 1984 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
-x-ray: wnp530:0.680/wn530:0.680/wa530:D=683632
-Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
+x-ray: wnp530:0.830/wn530:0.830/wa530:D=825539
+Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248
 
 {
-    "id": 22241,
-    "date": "2025-11-09T16:13:37",
-    "date_gmt": "2025-11-09T16:13:37",
+    "id": 22248,
+    "date": "2025-11-09T19:46:36",
+    "date_gmt": "2025-11-09T19:46:36",
     "guid": {
-        "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
-        "raw": "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+        "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
+        "raw": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
     },
-    "modified": "2025-11-09T16:13:37",
-    "modified_gmt": "2025-11-09T16:13:37",
+    "modified": "2025-11-09T19:46:36",
+    "modified_gmt": "2025-11-09T19:46:36",
     "password": "",
-    "slug": "allure-crud-test-post",
+    "slug": "allure-crud-test-post-2",
     "status": "publish",
     "type": "post",
-    "link": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+    "link": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
     "title": {
         "raw": "Allure CRUD Test Post",
         "rendered": "Allure CRUD Test Post"
@@ -146,9 +146,9 @@ Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
         
     ],
     "permalink_template": "https://dev.emeli.in.ua/news/%postname%/html",
-    "generated_slug": "allure-crud-test-post",
+    "generated_slug": "allure-crud-test-post-2",
     "class_list": [
-        "post-22241",
+        "post-22248",
         "post",
         "type-post",
         "status-publish",
@@ -156,7 +156,7 @@ Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
         "hentry",
         "category-news"
     ],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Allure CRUD Test Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Allure CRUD Test Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"This post is created by Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T16:13:37+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"name\":\"Allure CRUD Test Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T16:13:37+00:00\",\"dateModified\":\"2025-11-09T16:13:37+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Allure CRUD Test Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Allure CRUD Test Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Allure CRUD Test Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"This post is created by Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T19:46:36+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"name\":\"Allure CRUD Test Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T19:46:36+00:00\",\"dateModified\":\"2025-11-09T19:46:36+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Allure CRUD Test Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
     "yoast_head_json": {
         "title": "Allure CRUD Test Post - API Ecommerce",
         "robots": {
@@ -166,14 +166,14 @@ Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
             "max-image-preview": "max-image-preview:large",
             "max-video-preview": "max-video-preview:-1"
         },
-        "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+        "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
         "og_locale": "en_US",
         "og_type": "article",
         "og_title": "Allure CRUD Test Post - API Ecommerce",
         "og_description": "This post is created by Allure CRUD test",
-        "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+        "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
         "og_site_name": "API Ecommerce",
-        "article_published_time": "2025-11-09T16:13:37+00:00",
+        "article_published_time": "2025-11-09T19:46:36+00:00",
         "author": "admin",
         "twitter_card": "summary_large_image",
         "twitter_misc": {
@@ -202,33 +202,33 @@ Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
                 },
                 {
                     "@type": "WebPage",
-                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
-                    "url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
+                    "url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
                     "name": "Allure CRUD Test Post - API Ecommerce",
                     "isPartOf": {
                         "@id": "https://dev.emeli.in.ua/#website"
                     },
-                    "datePublished": "2025-11-09T16:13:37+00:00",
-                    "dateModified": "2025-11-09T16:13:37+00:00",
+                    "datePublished": "2025-11-09T19:46:36+00:00",
+                    "dateModified": "2025-11-09T19:46:36+00:00",
                     "author": {
                         "@id": "https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c"
                     },
                     "breadcrumb": {
-                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb"
+                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb"
                     },
                     "inLanguage": "en-US",
                     "potentialAction": [
                         {
                             "@type": "ReadAction",
                             "target": [
-                                "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+                                "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
                             ]
                         }
                     ]
                 },
                 {
                     "@type": "BreadcrumbList",
-                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb",
+                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb",
                     "itemListElement": [
                         {
                             "@type": "ListItem",
@@ -262,7 +262,7 @@ Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
     "_links": {
         "self": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "collection": [
@@ -284,70 +284,70 @@ Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
         "replies": [
             {
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/comments?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/comments?post=22248"
             }
         ],
         "version-history": [
             {
                 "count": 0,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241/revisions"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248/revisions"
             }
         ],
         "wp:attachment": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/media?parent=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/media?parent=22248"
             }
         ],
         "wp:term": [
             {
                 "taxonomy": "category",
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/categories?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/categories?post=22248"
             },
             {
                 "taxonomy": "post_tag",
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/tags?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/tags?post=22248"
             }
         ],
         "wp:action-publish": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-unfiltered-html": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-sticky": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-assign-author": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-create-categories": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-assign-categories": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-create-tags": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-assign-tags": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "curies": [
@@ -360,7 +360,7 @@ Location: https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
     }
 }
 Request method:	GET
-Request URI:	https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
+Request URI:	https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -373,7 +373,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx
-Date: Sun, 09 Nov 2025 16:13:39 GMT
+Date: Sun, 09 Nov 2025 19:46:39 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -381,26 +381,26 @@ X-Robots-Tag: noindex
 X-Content-Type-Options: nosniff
 Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link
 Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
-Link: <https://dev.emeli.in.ua/news/allure-crud-test-post/html>; rel="alternate"; type=text/html
+Link: <https://dev.emeli.in.ua/news/allure-crud-test-post-2/html>; rel="alternate"; type=text/html
 Allow: GET, POST, PUT, PATCH, DELETE
 Expires: Wed, 11 Jan 1984 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
-x-ray: wnp530:0.610/wn530:0.610/wa530:D=606370
+x-ray: wnp530:0.690/wn530:0.690/wa530:D=687252
 Content-Encoding: gzip
 
 {
-    "id": 22241,
-    "date": "2025-11-09T16:13:37",
-    "date_gmt": "2025-11-09T16:13:37",
+    "id": 22248,
+    "date": "2025-11-09T19:46:36",
+    "date_gmt": "2025-11-09T19:46:36",
     "guid": {
-        "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+        "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
     },
-    "modified": "2025-11-09T16:13:37",
-    "modified_gmt": "2025-11-09T16:13:37",
-    "slug": "allure-crud-test-post",
+    "modified": "2025-11-09T19:46:36",
+    "modified_gmt": "2025-11-09T19:46:36",
+    "slug": "allure-crud-test-post-2",
     "status": "publish",
     "type": "post",
-    "link": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+    "link": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
     "title": {
         "rendered": "Allure CRUD Test Post"
     },
@@ -429,7 +429,7 @@ Content-Encoding: gzip
         
     ],
     "class_list": [
-        "post-22241",
+        "post-22248",
         "post",
         "type-post",
         "status-publish",
@@ -437,7 +437,7 @@ Content-Encoding: gzip
         "hentry",
         "category-news"
     ],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Allure CRUD Test Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Allure CRUD Test Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"This post is created by Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T16:13:37+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"name\":\"Allure CRUD Test Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T16:13:37+00:00\",\"dateModified\":\"2025-11-09T16:13:37+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Allure CRUD Test Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Allure CRUD Test Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Allure CRUD Test Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"This post is created by Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T19:46:36+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"name\":\"Allure CRUD Test Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T19:46:36+00:00\",\"dateModified\":\"2025-11-09T19:46:36+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Allure CRUD Test Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
     "yoast_head_json": {
         "title": "Allure CRUD Test Post - API Ecommerce",
         "robots": {
@@ -447,14 +447,14 @@ Content-Encoding: gzip
             "max-image-preview": "max-image-preview:large",
             "max-video-preview": "max-video-preview:-1"
         },
-        "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+        "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
         "og_locale": "en_US",
         "og_type": "article",
         "og_title": "Allure CRUD Test Post - API Ecommerce",
         "og_description": "This post is created by Allure CRUD test",
-        "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+        "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
         "og_site_name": "API Ecommerce",
-        "article_published_time": "2025-11-09T16:13:37+00:00",
+        "article_published_time": "2025-11-09T19:46:36+00:00",
         "author": "admin",
         "twitter_card": "summary_large_image",
         "twitter_misc": {
@@ -483,33 +483,33 @@ Content-Encoding: gzip
                 },
                 {
                     "@type": "WebPage",
-                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
-                    "url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
+                    "url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
                     "name": "Allure CRUD Test Post - API Ecommerce",
                     "isPartOf": {
                         "@id": "https://dev.emeli.in.ua/#website"
                     },
-                    "datePublished": "2025-11-09T16:13:37+00:00",
-                    "dateModified": "2025-11-09T16:13:37+00:00",
+                    "datePublished": "2025-11-09T19:46:36+00:00",
+                    "dateModified": "2025-11-09T19:46:36+00:00",
                     "author": {
                         "@id": "https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c"
                     },
                     "breadcrumb": {
-                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb"
+                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb"
                     },
                     "inLanguage": "en-US",
                     "potentialAction": [
                         {
                             "@type": "ReadAction",
                             "target": [
-                                "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+                                "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
                             ]
                         }
                     ]
                 },
                 {
                     "@type": "BreadcrumbList",
-                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb",
+                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb",
                     "itemListElement": [
                         {
                             "@type": "ListItem",
@@ -543,7 +543,7 @@ Content-Encoding: gzip
     "_links": {
         "self": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "collection": [
@@ -565,30 +565,30 @@ Content-Encoding: gzip
         "replies": [
             {
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/comments?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/comments?post=22248"
             }
         ],
         "version-history": [
             {
                 "count": 0,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241/revisions"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248/revisions"
             }
         ],
         "wp:attachment": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/media?parent=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/media?parent=22248"
             }
         ],
         "wp:term": [
             {
                 "taxonomy": "category",
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/categories?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/categories?post=22248"
             },
             {
                 "taxonomy": "post_tag",
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/tags?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/tags?post=22248"
             }
         ],
         "curies": [
@@ -601,7 +601,7 @@ Content-Encoding: gzip
     }
 }
 Request method:	PUT
-Request URI:	https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241
+Request URI:	https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -619,7 +619,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: nginx
-Date: Sun, 09 Nov 2025 16:13:40 GMT
+Date: Sun, 09 Nov 2025 19:46:40 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -631,24 +631,24 @@ Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Co
 Allow: GET, POST, PUT, PATCH, DELETE
 Expires: Wed, 11 Jan 1984 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
-x-ray: wnp530:0.610/wn530:0.610/wa530:D=607642
+x-ray: wnp530:0.727/wn530:0.710/wa530:D=717817
 Content-Encoding: gzip
 
 {
-    "id": 22241,
-    "date": "2025-11-09T16:13:37",
-    "date_gmt": "2025-11-09T16:13:37",
+    "id": 22248,
+    "date": "2025-11-09T19:46:36",
+    "date_gmt": "2025-11-09T19:46:36",
     "guid": {
-        "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
-        "raw": "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+        "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
+        "raw": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
     },
-    "modified": "2025-11-09T16:13:40",
-    "modified_gmt": "2025-11-09T16:13:40",
+    "modified": "2025-11-09T19:46:40",
+    "modified_gmt": "2025-11-09T19:46:40",
     "password": "",
-    "slug": "allure-crud-test-post",
+    "slug": "allure-crud-test-post-2",
     "status": "publish",
     "type": "post",
-    "link": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+    "link": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
     "title": {
         "raw": "Updated Allure CRUD Post",
         "rendered": "Updated Allure CRUD Post"
@@ -683,7 +683,7 @@ Content-Encoding: gzip
     "permalink_template": "https://dev.emeli.in.ua/news/%postname%/html",
     "generated_slug": "updated-allure-crud-post",
     "class_list": [
-        "post-22241",
+        "post-22248",
         "post",
         "type-post",
         "status-publish",
@@ -691,7 +691,7 @@ Content-Encoding: gzip
         "hentry",
         "category-news"
     ],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Updated Allure CRUD Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Updated Allure CRUD Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"Updated content for Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T16:13:37+00:00\" />\n<meta property=\"article:modified_time\" content=\"2025-11-09T16:13:40+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"name\":\"Updated Allure CRUD Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T16:13:37+00:00\",\"dateModified\":\"2025-11-09T16:13:40+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Updated Allure CRUD Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Updated Allure CRUD Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Updated Allure CRUD Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"Updated content for Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T19:46:36+00:00\" />\n<meta property=\"article:modified_time\" content=\"2025-11-09T19:46:40+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"name\":\"Updated Allure CRUD Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T19:46:36+00:00\",\"dateModified\":\"2025-11-09T19:46:40+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Updated Allure CRUD Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
     "yoast_head_json": {
         "title": "Updated Allure CRUD Post - API Ecommerce",
         "robots": {
@@ -701,15 +701,15 @@ Content-Encoding: gzip
             "max-image-preview": "max-image-preview:large",
             "max-video-preview": "max-video-preview:-1"
         },
-        "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+        "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
         "og_locale": "en_US",
         "og_type": "article",
         "og_title": "Updated Allure CRUD Post - API Ecommerce",
         "og_description": "Updated content for Allure CRUD test",
-        "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+        "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
         "og_site_name": "API Ecommerce",
-        "article_published_time": "2025-11-09T16:13:37+00:00",
-        "article_modified_time": "2025-11-09T16:13:40+00:00",
+        "article_published_time": "2025-11-09T19:46:36+00:00",
+        "article_modified_time": "2025-11-09T19:46:40+00:00",
         "author": "admin",
         "twitter_card": "summary_large_image",
         "twitter_misc": {
@@ -738,33 +738,33 @@ Content-Encoding: gzip
                 },
                 {
                     "@type": "WebPage",
-                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
-                    "url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
+                    "url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
                     "name": "Updated Allure CRUD Post - API Ecommerce",
                     "isPartOf": {
                         "@id": "https://dev.emeli.in.ua/#website"
                     },
-                    "datePublished": "2025-11-09T16:13:37+00:00",
-                    "dateModified": "2025-11-09T16:13:40+00:00",
+                    "datePublished": "2025-11-09T19:46:36+00:00",
+                    "dateModified": "2025-11-09T19:46:40+00:00",
                     "author": {
                         "@id": "https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c"
                     },
                     "breadcrumb": {
-                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb"
+                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb"
                     },
                     "inLanguage": "en-US",
                     "potentialAction": [
                         {
                             "@type": "ReadAction",
                             "target": [
-                                "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+                                "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
                             ]
                         }
                     ]
                 },
                 {
                     "@type": "BreadcrumbList",
-                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb",
+                    "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb",
                     "itemListElement": [
                         {
                             "@type": "ListItem",
@@ -798,7 +798,7 @@ Content-Encoding: gzip
     "_links": {
         "self": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "collection": [
@@ -820,76 +820,76 @@ Content-Encoding: gzip
         "replies": [
             {
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/comments?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/comments?post=22248"
             }
         ],
         "version-history": [
             {
                 "count": 1,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241/revisions"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248/revisions"
             }
         ],
         "predecessor-version": [
             {
-                "id": 22242,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241/revisions/22242"
+                "id": 22249,
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248/revisions/22249"
             }
         ],
         "wp:attachment": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/media?parent=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/media?parent=22248"
             }
         ],
         "wp:term": [
             {
                 "taxonomy": "category",
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/categories?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/categories?post=22248"
             },
             {
                 "taxonomy": "post_tag",
                 "embeddable": true,
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/tags?post=22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/tags?post=22248"
             }
         ],
         "wp:action-publish": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-unfiltered-html": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-sticky": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-assign-author": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-create-categories": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-assign-categories": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-create-tags": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "wp:action-assign-tags": [
             {
-                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241"
+                "href": "https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248"
             }
         ],
         "curies": [
@@ -902,7 +902,7 @@ Content-Encoding: gzip
     }
 }
 Request method:	DELETE
-Request URI:	https://dev.emeli.in.ua/wp-json/wp/v2/posts/22241?force=true
+Request URI:	https://dev.emeli.in.ua/wp-json/wp/v2/posts/22248?force=true
 Proxy:			<none>
 Request params:	<none>
 Query params:	force=true
@@ -915,7 +915,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx
-Date: Sun, 09 Nov 2025 16:13:42 GMT
+Date: Sun, 09 Nov 2025 19:46:42 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -926,26 +926,26 @@ Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link
 Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
 Expires: Wed, 11 Jan 1984 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
-x-ray: wnp530:1.080/wn530:1.070/wa530:D=1073892
+x-ray: wnp530:1.240/wn530:1.240/wa530:D=1239188
 Content-Encoding: gzip
 
 {
     "deleted": true,
     "previous": {
-        "id": 22241,
-        "date": "2025-11-09T16:13:37",
-        "date_gmt": "2025-11-09T16:13:37",
+        "id": 22248,
+        "date": "2025-11-09T19:46:36",
+        "date_gmt": "2025-11-09T19:46:36",
         "guid": {
-            "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
-            "raw": "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+            "rendered": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
+            "raw": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
         },
-        "modified": "2025-11-09T16:13:40",
-        "modified_gmt": "2025-11-09T16:13:40",
+        "modified": "2025-11-09T19:46:40",
+        "modified_gmt": "2025-11-09T19:46:40",
         "password": "",
-        "slug": "allure-crud-test-post",
+        "slug": "allure-crud-test-post-2",
         "status": "publish",
         "type": "post",
-        "link": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+        "link": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
         "title": {
             "raw": "Updated Allure CRUD Post",
             "rendered": "Updated Allure CRUD Post"
@@ -980,7 +980,7 @@ Content-Encoding: gzip
         "permalink_template": "https://dev.emeli.in.ua/news/%postname%/html",
         "generated_slug": "updated-allure-crud-post",
         "class_list": [
-            "post-22241",
+            "post-22248",
             "post",
             "type-post",
             "status-publish",
@@ -988,7 +988,7 @@ Content-Encoding: gzip
             "hentry",
             "category-news"
         ],
-        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Updated Allure CRUD Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Updated Allure CRUD Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"Updated content for Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T16:13:37+00:00\" />\n<meta property=\"article:modified_time\" content=\"2025-11-09T16:13:40+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\",\"name\":\"Updated Allure CRUD Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T16:13:37+00:00\",\"dateModified\":\"2025-11-09T16:13:40+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Updated Allure CRUD Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Updated Allure CRUD Post - API Ecommerce</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Updated Allure CRUD Post - API Ecommerce\" />\n<meta property=\"og:description\" content=\"Updated content for Allure CRUD test\" />\n<meta property=\"og:url\" content=\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\" />\n<meta property=\"og:site_name\" content=\"API Ecommerce\" />\n<meta property=\"article:published_time\" content=\"2025-11-09T19:46:36+00:00\" />\n<meta property=\"article:modified_time\" content=\"2025-11-09T19:46:40+00:00\" />\n<meta name=\"author\" content=\"admin\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Written by\" />\n\t<meta name=\"twitter:data1\" content=\"admin\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://dev.emeli.in.ua/#website\",\"url\":\"https://dev.emeli.in.ua/\",\"name\":\"API Ecommerce\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://dev.emeli.in.ua/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"url\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\",\"name\":\"Updated Allure CRUD Post - API Ecommerce\",\"isPartOf\":{\"@id\":\"https://dev.emeli.in.ua/#website\"},\"datePublished\":\"2025-11-09T19:46:36+00:00\",\"dateModified\":\"2025-11-09T19:46:40+00:00\",\"author\":{\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\"},\"breadcrumb\":{\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная страница\",\"item\":\"https://dev.emeli.in.ua/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Updated Allure CRUD Post\"}]},{\"@type\":\"Person\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c\",\"name\":\"admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://dev.emeli.in.ua/#/schema/person/image/\",\"url\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"contentUrl\":\"https://secure.gravatar.com/avatar/e5d4d0a965a0cc3468e7ee377b678f6b?s=96&d=mm&r=g\",\"caption\":\"admin\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
         "yoast_head_json": {
             "title": "Updated Allure CRUD Post - API Ecommerce",
             "robots": {
@@ -998,15 +998,15 @@ Content-Encoding: gzip
                 "max-image-preview": "max-image-preview:large",
                 "max-video-preview": "max-video-preview:-1"
             },
-            "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+            "canonical": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
             "og_locale": "en_US",
             "og_type": "article",
             "og_title": "Updated Allure CRUD Post - API Ecommerce",
             "og_description": "Updated content for Allure CRUD test",
-            "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+            "og_url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
             "og_site_name": "API Ecommerce",
-            "article_published_time": "2025-11-09T16:13:37+00:00",
-            "article_modified_time": "2025-11-09T16:13:40+00:00",
+            "article_published_time": "2025-11-09T19:46:36+00:00",
+            "article_modified_time": "2025-11-09T19:46:40+00:00",
             "author": "admin",
             "twitter_card": "summary_large_image",
             "twitter_misc": {
@@ -1035,33 +1035,33 @@ Content-Encoding: gzip
                     },
                     {
                         "@type": "WebPage",
-                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
-                        "url": "https://dev.emeli.in.ua/news/allure-crud-test-post/html",
+                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
+                        "url": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html",
                         "name": "Updated Allure CRUD Post - API Ecommerce",
                         "isPartOf": {
                             "@id": "https://dev.emeli.in.ua/#website"
                         },
-                        "datePublished": "2025-11-09T16:13:37+00:00",
-                        "dateModified": "2025-11-09T16:13:40+00:00",
+                        "datePublished": "2025-11-09T19:46:36+00:00",
+                        "dateModified": "2025-11-09T19:46:40+00:00",
                         "author": {
                             "@id": "https://dev.emeli.in.ua/#/schema/person/bb89916873b830900723459d0dd75a1c"
                         },
                         "breadcrumb": {
-                            "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb"
+                            "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb"
                         },
                         "inLanguage": "en-US",
                         "potentialAction": [
                             {
                                 "@type": "ReadAction",
                                 "target": [
-                                    "https://dev.emeli.in.ua/news/allure-crud-test-post/html"
+                                    "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html"
                                 ]
                             }
                         ]
                     },
                     {
                         "@type": "BreadcrumbList",
-                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post/html#breadcrumb",
+                        "@id": "https://dev.emeli.in.ua/news/allure-crud-test-post-2/html#breadcrumb",
                         "itemListElement": [
                             {
                                 "@type": "ListItem",

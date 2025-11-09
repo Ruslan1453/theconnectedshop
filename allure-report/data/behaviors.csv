@@ -1,5 +1,7 @@
 "BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
 "0","","0","","13","0","","0"
-"0","The Connected Shop UI Tests","0","Home Page and Search","1","0","Open Home Page","0"
 "0","The Connected Shop UI Tests","0","Home Page and Search","1","0","Header Logo","0"
+"0","WordPress Posts API","3","CRUD операции с постами","4","0","","0"
+"0","WordPress Posts API","0","Полный CRUD с Allure","1","0","","0"
+"0","The Connected Shop UI Tests","0","Home Page and Search","1","0","Open Home Page","0"
 "0","The Connected Shop UI Tests","0","Home Page and Search","1","0","Search Input","0"

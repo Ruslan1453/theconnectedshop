@@ -1,1 +1,1 @@
-{"total":14,"items":[{"uid":"6f6d321874fd58edeac08c40052c0a1c","name":"The Connected Shop UI Tests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
+{"total":15,"items":[{"uid":"e5490cc345ad64ab08b632dfa7832f5d","name":"WordPress Posts API","statistic":{"failed":1,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":2}},{"uid":"6f6d321874fd58edeac08c40052c0a1c","name":"The Connected Shop UI Tests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

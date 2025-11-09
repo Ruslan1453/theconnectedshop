@@ -24,7 +24,7 @@ public class Apitest {
     private final String username = "admin";
     private final String password = "Engineer_123";
 
-    private int postId;
+    private static int postId;
 
     @BeforeEach
     @SuppressWarnings("unused")
